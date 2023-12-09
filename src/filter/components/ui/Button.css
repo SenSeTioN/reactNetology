@@ -1,0 +1,18 @@
+.btn {
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #bababa;
+}
+
+.selected {
+  background-color: #000;
+  color: #fff
+}

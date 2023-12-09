@@ -1,5 +1,7 @@
+import Portfolio from './filter/components/Portfolio'
+
 const App = () => {
-  return <></>
+  return <Portfolio />
 }
 
 export default App

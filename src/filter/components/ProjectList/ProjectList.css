@@ -1,0 +1,10 @@
+.project-list {
+  column-count: 3;
+  column-gap: 10px;
+  margin: auto;
+}
+
+.project-list__img {
+  width: 100%;
+  object-fit: cover;
+}
