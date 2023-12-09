@@ -2,7 +2,7 @@
 
 Необходимо реализовать портфолио с фильтрами, аналогичное указанному на изображении.
 
-![portfolio-all](![Alt text](src/filter/assets/portfolio-all.png))
+![portfolio-all](src/filter/assets/portfolio-all.png)
 
 ## Описание проекта
 
@@ -35,7 +35,7 @@
 - из компонента `Portfolio` передать активный фильтр в свойство `selected` компонента `Toolbar`;
 - в компоненте `Portfolio` отфильтровать по активному фильтру проекты и передать их в компонент `ProjectList`.
 
-![portfolio-cards.png](![Alt text](src/filter/assets/portfolio-cards.png))
+![portfolio-cards.png](src/filter/assets/portfolio-cards.png)
 
 Набор данных для отображения:
 
