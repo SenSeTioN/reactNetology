@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/SenSeTioN/reactNetology/actions/workflows/deploy.yml/badge.svg)](https://github.com/SenSeTioN/reactNetology/actions/workflows/deploy.yml)
+
 # Портфолио с фильтрами
 
 Необходимо реализовать портфолио с фильтрами, аналогичное указанному на изображении.
