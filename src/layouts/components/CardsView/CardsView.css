@@ -1,0 +1,20 @@
+.container {
+  max-width: 1440px;
+  padding: 100px;
+}
+
+
+.view_module {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  justify-content: space-around;
+}
+
+.view_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
