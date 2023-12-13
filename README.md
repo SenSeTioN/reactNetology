@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+Выпадающий список
+===
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Вам необходимо реализовать компоненты выпадающего списка.
 
-Currently, two official plugins are available:
+## Описание проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Выпадающий список](./assets/dropdown.png)
 
-## Expanding the ESLint configuration
+Реализуйте компонент `DropdownList`, аналогичный указанному на рисунке. Для позиционирования выпадающего списка воспользуйтесь контейнером с `position: relatvie`. Для простоты будем считать, что размер кнопки, при нажатии на которую показывается выпадающий список, фиксированный. Соответственно, вам не нужно через DOM API вычислять размеры и отступы.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Структура компонентов:
+- `Dropdown` — содержит кнопку и `DropdownList`, внутри себя хранит состояние, показывать или нет выпадающий список;
+- `DropdownList` — содержит список `DropdownItem` и хранит информацию о текущем выбранном элементе.
 
-- Configure the top-level `parserOptions` property like this:
+Вам нужно:
+1. При клике на кнопку показывать и скрывать выпадающее меню.
+1. Отрисовывать список на базе массива, хранящегося в памяти, через `map`.
+1. Подсвечивать выбранный элемент в списке, сделайте это на базе inline-стилей.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Подглядеть реализацию показа и сворачивания на чистом JS и CSS вы можете в исходниках, расположенных в этом же каталоге.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Вы можете реализовать эту задачу как с использованием functional компонентов, так и на базе class-based компонентов.
+
+Но мы рекомендуем functional.
